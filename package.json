@@ -9,11 +9,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "prestart": "npm run build",
-    "build": "handlebars views/partials/photoCard.handlebars -f static/photoCardTemplate.js"
+    "build": "handlebars views/partials/photoCard.handlebars -f static/photoCardTemplate.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "express": "^4.21.1",
     "express-handlebars": "^8.0.1",
     "handlebars": "^4.7.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
